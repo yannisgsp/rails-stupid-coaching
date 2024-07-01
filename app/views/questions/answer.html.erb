@@ -1,0 +1,12 @@
+<div class="container mt-3">
+    <h1 class="h1">Stupid Coaching</h1>
+  <div class="col-4 mt-3 border-start border-secondary-subtle border-5 ps-3">
+    <p class="fw-light"><%= params[:question].capitalize %></p>
+    <p class="fw-light fst-italic">-You</p>
+  </div>
+  <div class="col-4 border-start border-secondary-subtle border-5 ps-3 bg-warning bg-opacity-10">
+    <p><%= @answer %></p>
+    <p class="fw-light fst-italic ">-Your coach</p>
+  </div>
+    <%= link_to "Ask a new question", ask_path %>
+</div>
